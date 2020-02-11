@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use('/products', productsRoute);
 
 
-//seting the endpoint
+//seting the endpoint that listen to HTTP get request.
 app.get('/',(req,res) => {
     res.send("its home page");
 
@@ -30,6 +30,6 @@ mongoose.connect(process.env.DB_CONNECTION
 
 
 // starting the server
-app.listen(3000,()=> console.log('server is running'));
+app.listen(port,()=> console.log('server is running'));
 
 
