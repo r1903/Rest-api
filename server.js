@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv/config');
 const productsRoute = require ('./routes/products');
-const port = process.env.port || 3000;
+const port = process.env.Port || 3000;
 
 //Defining the Express app
 const app = express();
